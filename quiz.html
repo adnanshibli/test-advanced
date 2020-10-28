@@ -2,76 +2,141 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>PRMANGY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/401.css">
+    <link rel="shortcut icon" href="/images/Untitled_Artwork 7 (1).png" type="image/icon" />
+
 </head>
 
 <body>
-    <header class='header1'>
-        <nav id="bar1">
-            <div id="logo1">
-                <img height="150" width="150" src="img/5b2f7f89-f50e-4b74-aa35-30e5d6280e9f_200x200.png">
+    <header style="background-image: url(images/asac_classrooms.jpg);">
+        <div class="navbar">
+            <img src="/images/Untitled_Artwork 7 (1).png" width="70" height="80">
+            <div class="displayNav">
+                <a href="About.html">About Us</a>
+                <a href="projects.html">Projects</a>
+                <a href="quiz.html">Take a quiz</a>
+                <div class="subnav">
+                    <button class="subnavbtn">Advanced <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="401.html">401 course</a>
+
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">Intermediate <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="201.html">201 course</a>
+                        <a href="301.html">301 course</a>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">Beginner <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="102.html">102 course</a>
+                        <a href="101.html">101 course</a>
+                    </div>
+                </div>
+                <a href="#contact">Home</a>
             </div>
-            <ul>
-                <li class="liitems1"><a href="#">Home</a></li>
-                <li class="liitems1"><a href="#">Beginner</a></li>
-                <li class="liitems1"><a href="#">Intermediate</a></li>
-                <li class="liitems1"><a href="#">Advanced</a></li>
-                <li class="liitems1"><a href="#">Projects</a></li>
-                <li class="liitems1"><a href="#">About Us</a></li>
-            </ul>
-        </nav>
-        <div class="welcome">
-            <h1 id='h1intermediate'>Advanced Software Development Level</h1>
         </div>
+        <h1> </h1>
     </header>
     <main>
-
-
-        <div class="title">
-            <h2>How Much Do You Know about <br>Parks and Nature?</h2>
-        </div>
-        <div class="quiz-container">
-            <h4 id="question">Question Text</h4>
-            <ul class="answers">
-                <li><input type="radio" class="answer" id="a" name="answer" value="a">
-                    <label for="a" id="a_answer">Answer</label> </li>
-                <li><input type="radio" class="answer" id="b" name="answer" value="b">
-                    <label for="b" id="b_answer">Answer</label> </li>
-                <li><input type="radio" class="answer" id="c" name="answer" value="c">
-                    <label for="c" id="c_answer">Answer</label> </li>
-                <li><input type="radio" class="answer" id="d" name="answer" value="d">
-                    <label for="d" id="d_answer">Answer</label> </li>
-            </ul>
-            <button class="btn" id="submit" onclick="submitAnswer()"> Submit Answer</button>
-            <div id="demo"></div>
-            <button class="btn-next" id="next" onclick="nextQuiz()">Next</button>
-
-    </main>
-    <footer class="footer-distributed">
-        <div class="footer-left">
-            <h3>Prmangy<span id='span'>journey</span></h3>
-            <div class="footer-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
+        <section id="intro">
+            <div>
+                <img src="data:image/jpeg;base64,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">
             </div>
-            <p class="footer-company-name">CookieStand 201Fatima © 2020</p>
-        </div>
-        <div class="footer-right">
-            <p>Contact Us</p>
-            <form action="#" method="post">
-                <input type="text" name="email" placeholder="Email">
-                <textarea name="message" placeholder="Message"></textarea>
-                <button>Send</button>
+            <span style="font-weight: bolder;">
+                <h1>QUIZ</h1>
+                <hr> Becoming a well-rounded developer is much more than learning language syntax, or dealing with
+                algorithms and bugs in the code ,programming is a way of thinking just as every thing you may be passionated
+                about becomes a way of life ,each one of us has the programming mentality and logic in his/her mind,and
+                all what you need to do is nurture this mintality with skills of tools using which can grow up by practcing , the more you practice the more you will gain and
+                this will be reflected on your code and moreover,on your professional path as a programmer,this quiz is
+                just for fun, it was made just to bring a smile on your face as you remmember some funny events happened
+                while programming and this is just for fun,so enjoy it.
+                <strong>A hint for you ,</strong> while answering this just try to think about it in the funny way don't think logical, it's not a code
+
+            </span>
+        </section>
+        <section id="quizsec">
+            <div class="title">
+                <h1>Test If You Are A Real Programmer</h1>
+                <div class="quizhr">
+                    <hr>
+                </div>
+            </div>
+            <div class="quiz-container">
+                <h4 id="question">Question Text</h4>
+                <ul class="answers">
+                    <li><input type="radio" class="answer" id="a" name="answer" value="a">
+                        <label for="a" id="a_answer">Answer</label> </li>
+                    <li><input type="radio" class="answer" id="b" name="answer" value="b">
+                        <label for="b" id="b_answer">Answer</label> </li>
+                    <li><input type="radio" class="answer" id="c" name="answer" value="c">
+                        <label for="c" id="c_answer">Answer</label> </li>
+                    <li><input type="radio" class="answer" id="d" name="answer" value="d">
+                        <label for="d" id="d_answer">Answer</label> </li>
+                </ul>
+                <button class="btn" id="submit" onclick="submitAnswer()"> Submit Answer</button>
+                <div id="demo"></div>
+                <button class="btn-next" id="next" onclick="nextQuiz()">Next</button>
+        </section>
+    </main>
+    <footer>
+
+
+        <section class='prmangy'>
+            <span>Prmangy</span>
+        </section>
+
+        <section class="location">
+            <h3>CONTACT US</h3>
+            <div>JORDAN-AMMAN</div>
+            <div>Airport Street</div>
+            <div>+962777724548</div>
+
+            <!-- <div class="icons">
+                <ul>
+                    <i><img src="/images/iconfinder_Rounded_Facebook_svg_5282541 (1) (1).png" width="30" height="30"></i>
+                    <i><img src="/images/iconfinder_Rounded_Instagram_svg_5282544 (1) (1).png" width="30" height="30"></i>
+                    <i><img src="/images/iconfinder_Rounded_Linkedin2_svg_5282542 (1).png" width="30" height="30"></i>
+                    <i><img src="/images/iconfinder_Rounded_Twitter5_svg_5282551 (1).png" width="30" height="30"></i>
+                </ul>
+            </div> -->
+        </section>
+
+        <section class="additLinks">
+            <div>
+                <h3>ADDITIONAL LINKS</h3>
+                <ul>
+                    <li>
+                        <a href="http://www.ltuc.com/">LTUC</a>
+                    </li>
+                    <li>
+                        <a href="https://asac.ltuc.com/">ASAC</a>
+                    </li>
+                    <li>
+                        <a href="https://www.codefellows.org/">Code Fellows</a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="footerForm">
+            <h3>YOUR INFORMATION</h3>
+            <label class="yor" for="fname">Your Name</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Email:</label>
+            <input type="text" id="lname" name="lname"><br>
+            <input id='submit' type="submit" value="Submit">
             </form>
-        </div>
-        <script src="js/app.js"></script>
+        </section>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="js/quiz.js"></script>
 </body>
 
 </html>

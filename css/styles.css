@@ -9,7 +9,7 @@
   width: 100%;
 }
 #bar1 {
-     position: fixed;
+     position: fixed; 
      top: 0;
      width: 99%;
      /* background-color: rgba(210, 186, 233, 0.7); */
@@ -98,7 +98,7 @@
  margin: 0px 0px 0px 0px;
  background-color: lightgray;
   height: 100%;
-  width: 100%;
+  width: 70%;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -411,7 +411,7 @@ color: black;
 } */
 
 /* quiz container  */
-.title {
+/* .title {
 	color: #060;
 	margin: 20px auto;
 	text-align: center;
@@ -473,4 +473,4 @@ li, label {
 	font-size: 1.2rem;
 	text-align: center;
 	height: 30px;
-}
+} */
